@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D210F61-869B-48C9-9B2B-4D56B7CC2E97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BAkimTAkipProgramii</RootNamespace>
+    <AssemblyName>BAkimTAkipProgramii</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmArizaKodlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArizaKodlari.Designer.cs">
+      <DependentUpon>frmArizaKodlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBakim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBakim.Designer.cs">
+      <DependentUpon>frmBakim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBolumler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBolumler.Designer.cs">
+      <DependentUpon>frmBolumler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDuyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDuyurular.Designer.cs">
+      <DependentUpon>frmDuyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHakkında.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHakkında.Designer.cs">
+      <DependentUpon>frmHakkında.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIşPlanlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIşPlanlari.Designer.cs">
+      <DependentUpon>frmIşPlanlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKilitTarih.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKilitTarih.Designer.cs">
+      <DependentUpon>frmKilitTarih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMakineler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMakineler.Designer.cs">
+      <DependentUpon>frmMakineler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOneriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOneriler.Designer.cs">
+      <DependentUpon>frmOneriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPeriyodikBakim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPeriyodikBakim.Designer.cs">
+      <DependentUpon>frmPeriyodikBakim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersoneller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersoneller.Designer.cs">
+      <DependentUpon>frmPersoneller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor01.Designer.cs">
+      <DependentUpon>frmRapor01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor02.Designer.cs">
+      <DependentUpon>frmRapor02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor03.Designer.cs">
+      <DependentUpon>frmRapor03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor04.Designer.cs">
+      <DependentUpon>frmRapor04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor05.Designer.cs">
+      <DependentUpon>frmRapor05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor06.Designer.cs">
+      <DependentUpon>frmRapor06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor07.Designer.cs">
+      <DependentUpon>frmRapor07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor08.Designer.cs">
+      <DependentUpon>frmRapor08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor09.Designer.cs">
+      <DependentUpon>frmRapor09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor10.Designer.cs">
+      <DependentUpon>frmRapor10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor11.Designer.cs">
+      <DependentUpon>frmRapor11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSifreDegisikligi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSifreDegisikligi.Designer.cs">
+      <DependentUpon>frmSifreDegisikligi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmArizaKodlari.resx">
+      <DependentUpon>frmArizaKodlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBakim.resx">
+      <DependentUpon>frmBakim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBolumler.resx">
+      <DependentUpon>frmBolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDuyurular.resx">
+      <DependentUpon>frmDuyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHakkında.resx">
+      <DependentUpon>frmHakkında.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIşPlanlari.resx">
+      <DependentUpon>frmIşPlanlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKilitTarih.resx">
+      <DependentUpon>frmKilitTarih.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMakineler.resx">
+      <DependentUpon>frmMakineler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOneriler.resx">
+      <DependentUpon>frmOneriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPeriyodikBakim.resx">
+      <DependentUpon>frmPeriyodikBakim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersoneller.resx">
+      <DependentUpon>frmPersoneller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor01.resx">
+      <DependentUpon>frmRapor01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor02.resx">
+      <DependentUpon>frmRapor02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor03.resx">
+      <DependentUpon>frmRapor03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor04.resx">
+      <DependentUpon>frmRapor04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor05.resx">
+      <DependentUpon>frmRapor05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor06.resx">
+      <DependentUpon>frmRapor06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor07.resx">
+      <DependentUpon>frmRapor07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor08.resx">
+      <DependentUpon>frmRapor08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor09.resx">
+      <DependentUpon>frmRapor09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor10.resx">
+      <DependentUpon>frmRapor10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor11.resx">
+      <DependentUpon>frmRapor11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSifreDegisikligi.resx">
+      <DependentUpon>frmSifreDegisikligi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
